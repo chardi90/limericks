@@ -1,13 +1,18 @@
 body {
-  background-color: aquamarine;
-  color: #333;
+  background-color: #a4fbe3;
+  color: #5e87b8;
   font-family: "Lora", serif;
   line-height: 1.6;
+  text-align: center;
 }
 
 h1,
 h2 {
-  color: #4b2e83;
+  color: #5f5dbd;
   font-family: "Amatic SC", cursive;
   line-height: 1.8;
+}
+
+footer {
+  background-color: #83cee0;
 }
