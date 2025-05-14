@@ -17,45 +17,43 @@ h1 {
 form {
   background-color: #a4fbe3;
   border: 0;
-  border-radius: 10px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 188, 212, 0.2);
   display: flex;
   padding: 30px;
   margin: 0 20px 20px 30px;
 }
 
-p {
-  color: #5e87b8;
-  font-family: "Lora", serif;
-  font-size: 16px;
-  line-height: 1.1;
-  text-align: center;
-}
-
 footer {
-  color: #5f5dbd;
+  color: #5e87b8;
   font-family: "Lora", serif;
   font-size: 12px;
   line-height: 1.2;
+  margin: 30px 0 20px;
   text-align: center;
 }
 
 .container {
   background-color: #83cee0;
   border: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   padding: 15px;
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 600px;
 }
 
 form .generator-input {
   color: #5e87b8;
-  border: 2px solid rgba(94, 135, 184, 0.5);
+  border: 1px solid rgba(94, 135, 184, 0.2);
   border-radius: 30px;
   font-size: 14px;
   line-height: 20px;
   padding: 16px;
   width: 80%;
+}
+
+form .generator-input::placeholder {
+  color: rgba(166, 191, 220, 1);
 }
 
 form .submit-button {
@@ -71,4 +69,28 @@ form .submit-button {
   padding: 16px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   width: 20%;
+}
+
+div .limerick {
+  background-color: #a4fbe3;
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 188, 212, 0.2);
+  color: #5e87b8;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 30px;
+  margin: 0 20px 20px 30px;
+}
+
+.footer-link {
+  color: #5f5dbd;
+  font-weight: 700px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #a4fbe3;
+  text-decoration: underline;
 }
