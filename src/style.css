@@ -1,18 +1,41 @@
 body {
   background-color: #a4fbe3;
-  color: #5e87b8;
-  font-family: "Lora", serif;
-  line-height: 1.6;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #5f5dbd;
+  font-family: "Amatic SC", cursive;
+  font-size: 48px;
+  line-height: 1.5;
   text-align: center;
 }
 
-h1,
-h2 {
-  color: #5f5dbd;
-  font-family: "Amatic SC", cursive;
-  line-height: 1.8;
+p {
+  color: #5e87b8;
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.1;
+  text-align: center;
 }
 
 footer {
+  color: #5f5dbd;
+
+  font-family: "Lora", serif;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.container {
   background-color: #83cee0;
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 120px auto;
+  max-width: 600px;
 }

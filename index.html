@@ -12,52 +12,57 @@
     <title>AI Limerick Generator</title>
   </head>
   <body>
-    <header>
-      <h1 class="heading" id="heading">Limericks</h1>
-    </header>
-    <main>
-      <form action="" class="generator" id="generator">
-        <input
-          type="text"
-          name="theme-input"
-          autofocus
-          class="theme-input"
-          placeholder="Feed me four key words..."
-          id="theme-input"
-          required
-        />
-        <input
-          type="submit"
-          class="sumbit-button"
-          id="submit-button"
-          value="Submit"
-        />
-      </form>
-      <div class="limerick">
-        <p class="stanza" id="line-1">There once was...</p>
-        <p class="stanza" id="line-2">They....</p>
-        <p class="stanza" id="line-3">When...</p>
-        <p class="stanza" id="line-4">A...</p>
-      </div>
-    </main>
-    <footer class="footer" id="footer">
-      This AI generator is coded by
-      <a href="https://github.com/chardi90" class="footer-link" target="_blank"
-        >Clare Harding</a
-      >,
-      <a
-        href="https://github.com/chardi90/limericks"
-        class="footer-link"
-        target="_blank"
-        >open-sourced on GitHub</a
-      >, and
-      <a
-        href="https://limerick-generator.netlify.app/"
-        class="footer-link"
-        target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+    <div class="container">
+      <header>
+        <h1 class="heading" id="heading">Limericks</h1>
+      </header>
+      <main>
+        <form action="" class="generator" id="generator">
+          <input
+            type="text"
+            name="theme-input"
+            autofocus
+            class="theme-input"
+            placeholder="Feed me four key words..."
+            id="theme-input"
+            required
+          />
+          <input
+            type="submit"
+            class="sumbit-button"
+            id="submit-button"
+            value="Submit"
+          />
+        </form>
+        <div class="limerick">
+          <p class="stanza" id="line-1">There once was...</p>
+          <p class="stanza" id="line-2">They....</p>
+          <p class="stanza" id="line-3">When...</p>
+          <p class="stanza" id="line-4">A...</p>
+        </div>
+      </main>
+      <footer class="footer" id="footer">
+        This AI generator is coded by
+        <a
+          href="https://github.com/chardi90"
+          class="footer-link"
+          target="_blank"
+          >Clare Harding</a
+        >,
+        <a
+          href="https://github.com/chardi90/limericks"
+          class="footer-link"
+          target="_blank"
+          >open-sourced on GitHub</a
+        >, and
+        <a
+          href="https://limerick-generator.netlify.app/"
+          class="footer-link"
+          target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
