@@ -1,0 +1,13 @@
+body {
+  background-color: aquamarine;
+  color: #333;
+  font-family: "Lora", serif;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  color: #4b2e83;
+  font-family: "Amatic SC", cursive;
+  line-height: 1.8;
+}
