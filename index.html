@@ -9,14 +9,37 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Limericks</title>
+    <title>AI Limerick Generator</title>
   </head>
   <body>
-    <h1 class="heading" id="heading">Limericks</h1>
-    <form action="" class="generator" id="generator"></form>
-    <div class="limerick">
-      <p class="stanza">There once was...</p>
-    </div>
+    <header>
+      <h1 class="heading" id="heading">Limericks</h1>
+    </header>
+    <main>
+      <form action="" class="generator" id="generator">
+        <input
+          type="text"
+          name="theme-input"
+          autofocus
+          class="theme-input"
+          placeholder="Feed me four key words..."
+          id="theme-input"
+          required
+        />
+        <input
+          type="submit"
+          class="sumbit-button"
+          id="submit-button"
+          value="Submit"
+        />
+      </form>
+      <div class="limerick">
+        <p class="stanza" id="line-1">There once was...</p>
+        <p class="stanza" id="line-2">They....</p>
+        <p class="stanza" id="line-3">When...</p>
+        <p class="stanza" id="line-4">A...</p>
+      </div>
+    </main>
     <footer class="footer" id="footer">
       This AI generator is coded by
       <a href="https://github.com/chardi90" class="footer-link" target="_blank"
