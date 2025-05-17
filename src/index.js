@@ -2,7 +2,13 @@ function publishLimerick(response) {
   let limerickElement = document.querySelector("#limerick");
   let limerick = response.data.answer;
 
-  limerickElement.innerHTML = `${limerick}`;
+  limerickElement.innerHTML = "#limerick";
+  new Typewriter(limerickElement.innerHTML, {
+    strings: `${limerick}`,
+    autoStart: true,
+    delay: 1,
+    cursor: null,
+  });
 }
 
 function generateLimerick(input) {
