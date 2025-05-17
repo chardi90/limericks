@@ -15,13 +15,7 @@ h1 {
 }
 
 form {
-  background-color: #a4fbe3;
-  border: 0;
-  border-radius: 30px;
-  box-shadow: 0 2px 4px rgba(0, 188, 212, 0.2);
   display: flex;
-  padding: 30px;
-  margin: 0 20px 20px 30px;
 }
 
 footer {
@@ -41,6 +35,16 @@ footer {
   margin: 100px auto;
   margin-top: 50px;
   max-width: 600px;
+}
+
+.form-container {
+  background-color: #a4fbe3;
+  border: 0;
+  border-radius: 30px;
+  box-shadow: 0 2px 4px rgba(0, 188, 212, 0.2);
+  padding: 30px;
+  margin: 0 20px 20px 30px;
+  width: 80%;
 }
 
 form .generator-input {
@@ -70,6 +74,14 @@ form .submit-button {
   padding: 16px;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
   width: 20%;
+}
+
+.example {
+  color: #5e87b8;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  text-align: center;
+  padding: 15px auto;
 }
 
 div .limerick {

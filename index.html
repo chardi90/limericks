@@ -18,35 +18,30 @@
         <h1 class="heading" id="heading">Limericks</h1>
       </header>
       <main>
-        <form action="" class="generator" id="generator">
-          <input
-            type="text"
-            name="generator-input"
-            autofocus
-            class="generator-input"
-            placeholder="Feed me five key words..."
-            id="generator-input"
-            required
-          />
-          <input
-            type="submit"
-            class="submit-button"
-            id="submit-button"
-            value="Submit"
-          />
-        </form>
+        <div class="form-container">
+          <form action="" class="generator" id="generator">
+            <input
+              type="text"
+              autofocus
+              class="generator-input"
+              placeholder="Feed me five key words that rhyme..."
+              id="generator-input"
+              required
+            />
+            <input
+              type="submit"
+              class="submit-button"
+              id="submit-button"
+              value="Submit"
+            />
+          </form>
+          <small class="example"
+            >e.g. Rome, comb, gnome, roamed, dome OR Peru, canoe, kangaroo,
+            flew, bamboo</small
+          >
+        </div>
         <div class="limerick" id="limerick">
-          <p class="stanza" id="line-1">
-            A limerick is a 5-line humorous poem with a bouncy rhythm. Choose
-            four playful words that rhyme. e.g.
-          </p>
-          <p class="stanza italic" id="line-2">
-            Peru, canoe, kangaroo, flew, bamboo
-          </p>
-          <p class="stanza italic" id="line-3">Madrid, wig, squid, hid, lid</p>
-          <p class="stanza italic" id="line-4">
-            Rome, comb, gnome, roamed, dome
-          </p>
+          <p class="stanza" id="line-1"></p>
         </div>
       </main>
       <footer class="footer" id="footer">
