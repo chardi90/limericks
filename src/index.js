@@ -2,6 +2,7 @@ function publishLimerick(response) {
   let limerickElement = document.querySelector("#limerick");
   let limerick = response.data.answer;
   limerickElement.classList.remove("hidden");
+  limerickElement.innerHTML = "⏳ Generating your limerick...";
 
   limerickElement.innerHTML = "#limerick";
   new Typewriter(limerickElement.innerHTML, {
@@ -26,6 +27,9 @@ function handleClick(event) {
   event.preventDefault();
   let generatorInput = document.querySelector("#generator-input");
   let inputValue = generatorInput.value;
+  let limerickElement = document.querySelector("#limerick");
+  limerickElement.classList.remove("hidden");
+  limerickElement.innerHTML = "Generating your limerick...";
 
   generateLimerick(inputValue);
 }
