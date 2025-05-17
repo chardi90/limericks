@@ -84,6 +84,10 @@ div .limerick {
   margin: 0 20px 20px 30px;
 }
 
+.italic {
+  font-style: italic;
+}
+
 .footer-link {
   color: #5f5dbd;
   font-weight: 700px;
