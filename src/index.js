@@ -20,8 +20,9 @@ function handleClick(event) {
   let generatorInput = document.querySelector("#generator-input");
   let inputValue = generatorInput.value;
 
+  console.log(inputValue);
   generateLimerick(inputValue);
 }
 
-let buttonElement = document.querySelector("#submit-button");
-buttonElement.addEventListener("Click", handleClick);
+let formElement = document.querySelector("#generator");
+formElement.addEventListener("submit", handleClick);
