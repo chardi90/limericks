@@ -2,7 +2,7 @@ function publishLimerick(response) {
   let limerickElement = document.querySelector("#limerick");
   let limerick = response.data.answer;
   limerickElement.classList.remove("hidden");
-  limerickElement.innerHTML = "⏳ Generating your limerick...";
+  limerickElement.innerHTML = `<div class="generating">⏳ Generating your limerick...</div>`;
 
   limerickElement.innerHTML = "#limerick";
   new Typewriter(limerickElement.innerHTML, {

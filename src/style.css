@@ -83,6 +83,21 @@ form .submit-button {
   padding: 15px auto;
 }
 
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 div .limerick {
   background-color: #a4fbe3;
   border: 0;
