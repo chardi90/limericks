@@ -1,6 +1,7 @@
 function publishLimerick(response) {
   let limerickElement = document.querySelector("#limerick");
   let limerick = response.data.answer;
+  limerickElement.classList.remove("hidden");
 
   limerickElement.innerHTML = "#limerick";
   new Typewriter(limerickElement.innerHTML, {

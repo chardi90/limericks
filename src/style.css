@@ -80,7 +80,6 @@ form .submit-button {
   color: #5e87b8;
   font-family: "Lora", serif;
   font-size: 10px;
-  text-align: center;
   padding: 15px auto;
 }
 
@@ -95,6 +94,10 @@ div .limerick {
   line-height: 18px;
   padding: 30px;
   margin: 0 20px 20px 30px;
+}
+
+.hidden {
+  display: none;
 }
 
 .italic {
