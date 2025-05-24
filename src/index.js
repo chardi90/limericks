@@ -1,10 +1,23 @@
+const icons = [
+  "sports_kabaddi",
+  "snowshoeing",
+  "pregnant_woman",
+  "pool",
+  "sports_gymnastics",
+  "raven",
+  "pet_supplies",
+];
+
+const grid = document.getElementById("iconGrid");
+const total = 200;
+const formElement = document.querySelector("#generator");
+
+formElement.addEventListener("submit", handleClick);
+
 function publishLimerick(response) {
   let limerickElement = document.querySelector("#limerick");
   let limerick = response.data.answer;
-  limerickElement.classList.remove("hidden");
-  limerickElement.innerHTML = `<div class="generating">⏳ Generating your limerick...</div>`;
 
-  limerickElement.innerHTML = "#limerick";
   new Typewriter(limerickElement.innerHTML, {
     strings: `${limerick}`,
     autoStart: true,
@@ -19,6 +32,10 @@ function generateLimerick(input) {
   let context =
     "You are a limerick poet in the style of Edward Lear, please follow the rhyme scheme (AABBA), the limerick meter, the humour and the 5 line structure to create a short and snappy limerick using one key words provided. Please generate a 5-line limerick, each line should be returned in <p></p> HTML format. Then add this line to the bottom <p>SheCodes AI</p> with class italic.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+  let limerickElement = document.querySelector("#limerick");
+
+  limerickElement.classList.remove("hidden");
+  limerickElement.innerHTML = `<div class="generating">⏳ Generating your limerick...</div>`;
 
   axios.get(apiUrl).then(publishLimerick);
 }
@@ -34,25 +51,9 @@ function handleClick(event) {
   generateLimerick(inputValue);
 }
 
-const icons = [
-  "sports_kabaddi",
-  "snowshoeing",
-  "pregnant_woman",
-  "pool",
-  "sports_gymnastics",
-  "raven",
-  "pet_supplies",
-];
-
-const grid = document.getElementById("iconGrid");
-const total = 200;
-
 for (let i = 0; i < total; i++) {
   const span = document.createElement("span");
   span.textContent = icons[i % icons.length];
   span.classList.add("material-symbols-outlined");
   grid.appendChild(span);
 }
-
-let formElement = document.querySelector("#generator");
-formElement.addEventListener("submit", handleClick);
