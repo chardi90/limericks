@@ -1,5 +1,30 @@
 body {
   background-color: #a4fbe3;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-auto-rows: 100px;
+  z-index: -1;
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.icon-bg span {
+  font-family: "Material Symbols Outlined";
+  font-size: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 header {

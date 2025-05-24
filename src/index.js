@@ -34,5 +34,25 @@ function handleClick(event) {
   generateLimerick(inputValue);
 }
 
+const icons = [
+  "sports_kabaddi",
+  "snowshoeing",
+  "pregnant_woman",
+  "pool",
+  "sports_gymnastics",
+  "raven",
+  "pet_supplies",
+];
+
+const grid = document.getElementById("iconGrid");
+const total = 200;
+
+for (let i = 0; i < total; i++) {
+  const span = document.createElement("span");
+  span.textContent = icons[i % icons.length];
+  span.classList.add("material-symbols-outlined");
+  grid.appendChild(span);
+}
+
 let formElement = document.querySelector("#generator");
 formElement.addEventListener("submit", handleClick);
