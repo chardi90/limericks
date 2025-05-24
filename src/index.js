@@ -31,7 +31,7 @@ function generateLimerick(input) {
   let apiKey = "a2t477eebb3f98daaa0d6cf85ob51907";
   let prompt = `Please compose a limerick using these key words: ${input}.`;
   let context =
-    "You are a poet like Edward Lear, please follow the rhyme scheme (AABBA), the limerick meter, the humour and the 5 line structure to create a short and snappy limerick using one key words provided. Please generate a 5-line limerick, each line should be returned in <p></p> HTML format with the class of limerick. Then add this line to the bottom <p>SheCodes AI</p> and add the class italic to this last line.";
+    "You are a poet like Edward Lear, please follow the rhyme scheme (AABBA), the limerick meter, the humour and the 5 line structure to create a short and snappy limerick using one key words provided. Please generate a 5-line limerick, each line should be returned in <p></p> HTML format. Then add this line to the bottom <p>SheCodes AI</p> and add the class italic to this last line.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(publishLimerick);
