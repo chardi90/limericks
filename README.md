@@ -1,5 +1,5 @@
 # AI Limerick Generator
-A limerick generator that uses keywords to generate you limkerick-shapped poems on theme using AI. Built with JavaScript using an engineered prompt and axios to fetch poems from an AI API. Designed primarily for mobile.
+A limerick generator that uses keywords to generate you limerick-style poems on theme using AI. Built with JavaScript using an engineered prompt and axios to fetch poems from an AI API. Designed primarily for mobile.
 
 ## Features  
 - Search bar for key word input
